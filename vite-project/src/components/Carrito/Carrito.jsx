@@ -1,7 +1,5 @@
 import React, { useContext } from 'react';
-import { CartContext } from '../Context/CartContext';
-
-
+import { CartContext } from '../../Context/CartContext';
 
 export const Carrito = () => {
   const { carrito, precioTotal, vaciarCarrito } = useContext(CartContext);
@@ -19,7 +17,7 @@ export const Carrito = () => {
     <div className="card">
       <h1>Carrito de compras</h1>
       {carrito.map((prod) => (
-         <div  key={prod.id} class="carrito-estilos">
+         <div  key={prod.id} className="carrito-estilos">
         <h3>{prod.nombre}</h3>
         <img src={`${prod.imagen}`} alt={prod.nombre} height="200" width="200" />
         <p>Cantidad: {prod.contador}</p>

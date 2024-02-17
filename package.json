@@ -4,13 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm run custom-build",
+    "custom-build": "vite build && cp _redirects dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "firebase": "^10.8.0",
     "react-hook-form": "^7.50.1",
     "react-router-dom": "^6.21.2"
+  },
+  "devDependencies": {
+    "vite": "^5.1.3"
   }
 }

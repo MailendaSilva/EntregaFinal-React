@@ -1,9 +1,10 @@
 import React, { useContext, useState } from 'react';
-import { CartContext } from '../Context/CartContext';
+import { CartContext } from '../../Context/CartContext';
 import { useForm } from 'react-hook-form';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import "./CheckOut.css"
+
 
 
 const CheckOut = () => {
